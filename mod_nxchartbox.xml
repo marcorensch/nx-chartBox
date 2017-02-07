@@ -35,7 +35,7 @@
                 <field name="chartdata"
                        type="subform" 
                        multiple="true" 
-                       formsource="modules/mod_nxcharts/subforms/data.xml" 
+                       formsource="modules/mod_nxchartbox/subforms/data.xml" 
                        label="MOD_NX_CHARTS_DATA_LABEL" 
                        description="Hier die Beschreibung" 
                        layout="joomla.form.field.subform.repeatable" />
@@ -44,28 +44,28 @@
                 <field name="basicsettings"
                        type="subform" 
                        multiple="false" 
-                       formsource="modules/mod_nxcharts/subforms/basics.xml" 
+                       formsource="modules/mod_nxchartbox/subforms/basics.xml" 
                        label="MOD_NX_CHARTS_OPTIONS_BASIC_LABEL" 
                        description="" 
                        layout="joomla.form.field.subform.default" />
                 <field name="legendsettings"
                        type="subform" 
                        multiple="false" 
-                       formsource="modules/mod_nxcharts/subforms/legend.xml" 
+                       formsource="modules/mod_nxchartbox/subforms/legend.xml" 
                        label="MOD_NX_CHARTS_OPTIONS_LEGEND_LABEL" 
                        description="" 
                        layout="joomla.form.field.subform.default" />
                 <field name="labelssettings"
                        type="subform" 
                        multiple="false" 
-                       formsource="modules/mod_nxcharts/subforms/labels.xml" 
+                       formsource="modules/mod_nxchartbox/subforms/labels.xml" 
                        label="MOD_NX_CHARTS_OPTIONS_LABELS_LABEL" 
                        description="" 
                        layout="joomla.form.field.subform.default" />
                 <field name="scalessettings"
                        type="subform" 
                        multiple="false" 
-                       formsource="modules/mod_nxcharts/subforms/scales.xml" 
+                       formsource="modules/mod_nxchartbox/subforms/scales.xml" 
                        label="MOD_NX_CHARTS_OPTIONS_SCALES_LABEL" 
                        description="" 
                        layout="joomla.form.field.subform.default" />
@@ -81,7 +81,7 @@
     </config>
     <!--
     <updateservers>
-	    <server type="extension" name="MOD_NX_VBLIGHT" priority="1">http://update.nx-designs.ch/updates/filename.xml</server>
+	    <server type="extension" name="MOD_NX_" priority="1">http://update.nx-designs.ch/updates/filename.xml</server>
     </updateservers>
     -->
 </extension>
