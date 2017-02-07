@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="form-validate">
+    <field type="spacer" name="gridlinestitle" label="MOD_NX_CHARTS_OPTIONS_GRIDLINE_LABEL" />
+    <field name="drawborder" type="radio" default="1" label="MOD_NX_CHARTS_DRAWBORDER_LABEL" description="MOD_NX_CHARTS_DRAWBORDER_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="displaygridlines" type="radio" default="1" label="MOD_NX_CHARTS_GRIDLINES_LABEL" description="MOD_NX_CHARTS_GRIDLINES_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="girdlineswidth" showon="displaygridlines:1" type="text" label="MOD_NX_CHARTS_GLINEW_LABEL" description="MOD_NX_CHARTS_GLINEW_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="gridlinescolor" showon="displaygridlines:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_GLINEC_LABEL" description="MOD_NX_CHARTS_GLINEC_DESC" />
+    <field name="displayzerolines" type="radio" default="0" label="MOD_NX_CHARTS_SHOWZEROLINES_LABEL" description="MOD_NX_CHARTS_SHOWZEROLINES_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="zerolineswidth" showon="displayzerolines:1" type="text" label="MOD_NX_CHARTS_ZLINEW_LABEL" description="MOD_NX_CHARTS_ZLINEW_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="zerolinecolor" showon="displayzerolines:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_ZLINEC_LABEL" description="MOD_NX_CHARTS_ZLINEC_DESC" />
+    
+    <field type="spacer" name="endgridLines" hr="true" />
+    
+    <field type="spacer" name="ticktitle" label="MOD_NX_CHARTS_OPTIONS_TICKS_LABEL" />
+    <field name="displayticks" type="radio" default="1" label="MOD_NX_CHARTS_DISPTICKS_LABEL" description="MOD_NX_CHARTS_DISPTICKS_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+     <field name="autoSkip" showon="displayticks:1" type="radio" default="1" label="MOD_NX_CHARTS_ASKIP_LABEL" description="MOD_NX_CHARTS_ASKIP_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="autoskippadding" showon="displayticks:1" type="text" label="MOD_NX_CHARTS_ASKIPP_LABEL" description="MOD_NX_CHARTS_ASKIPP_DESC" filter="integer" class="required validate-numeric" default="10" />
+    <field name="minRota" showon="displayticks:1" type="text" label="MOD_NX_CHARTS_MINROTA_LABEL" description="MOD_NX_CHARTS_MINROTA_DESC" filter="integer" class="required validate-numeric" default="0" />
+    <field name="maxRota" showon="displayticks:1" type="text" label="MOD_NX_CHARTS_MAXROTA_LABEL" description="MOD_NX_CHARTS_MAXROTA_DESC" filter="integer" class="required validate-numeric" default="90" />
+    <field name="tickfsize" showon="displayticks:1" type="text" label="MOD_NX_CHARTS_TICKFSIZE_LABEL" description="MOD_NX_CHARTS_TICKFSIZE_DESC" filter="integer" class="required validate-numeric" default="10" />
+    <field name="tickpadding"  showon="displayticks:1" type="text" label="MOD_NX_CHARTS_TICKPAD_LABEL" description="MOD_NX_CHARTS_TICKPAD_DESC" filter="integer" class="required validate-numeric" default="10" />
+    <field name="tickcolor" showon="displayticks:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_TICKCOL_LABEL" description="MOD_NX_CHARTS_TICKCOL_DESC" />
+    
+
+    
+    
+    
+</form>

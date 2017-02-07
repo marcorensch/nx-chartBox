@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.[012345]" client="site" method="upgrade">
+	<name>MOD_NX_TITLE</name>
+	<author>Marco Rensch</author>
+	<creationDate>December 2016</creationDate>
+	<copyright>Copyright (C) nx-designs.ch</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>marco.rensch@area59.ch</authorEmail>
+	<authorUrl>www.nx-designs.ch</authorUrl>
+	<version>1.0.10</version>
+	<description>MOD_NX_DESCRIPTION</description>
+	
+	<files>
+		<filename module="mod_nxchartbox">mod_nxchartbox.php</filename>
+		<filename>mod_nxchartbox.xml</filename>
+		<filename>helper.php</filename>
+        <filename>printconfig.php</filename>
+		<filename>changelog.md</filename>
+		<filename>license.txt</filename>
+		<filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>subforms</folder>
+        <folder>language</folder>
+        <folder>images</folder>
+	</files>
+	
+	<languages>
+	</languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                
+            </fieldset>
+            <fieldset name="NX_CHARTS_DATA">
+                <field name="chartdata"
+                       type="subform" 
+                       multiple="true" 
+                       formsource="modules/mod_nxcharts/subforms/data.xml" 
+                       label="MOD_NX_CHARTS_DATA_LABEL" 
+                       description="Hier die Beschreibung" 
+                       layout="joomla.form.field.subform.repeatable" />
+            </fieldset>
+            <fieldset name="NX_CHARTS_OPTIONS">
+                <field name="basicsettings"
+                       type="subform" 
+                       multiple="false" 
+                       formsource="modules/mod_nxcharts/subforms/basics.xml" 
+                       label="MOD_NX_CHARTS_OPTIONS_BASIC_LABEL" 
+                       description="" 
+                       layout="joomla.form.field.subform.default" />
+                <field name="legendsettings"
+                       type="subform" 
+                       multiple="false" 
+                       formsource="modules/mod_nxcharts/subforms/legend.xml" 
+                       label="MOD_NX_CHARTS_OPTIONS_LEGEND_LABEL" 
+                       description="" 
+                       layout="joomla.form.field.subform.default" />
+                <field name="labelssettings"
+                       type="subform" 
+                       multiple="false" 
+                       formsource="modules/mod_nxcharts/subforms/labels.xml" 
+                       label="MOD_NX_CHARTS_OPTIONS_LABELS_LABEL" 
+                       description="" 
+                       layout="joomla.form.field.subform.default" />
+                <field name="scalessettings"
+                       type="subform" 
+                       multiple="false" 
+                       formsource="modules/mod_nxcharts/subforms/scales.xml" 
+                       label="MOD_NX_CHARTS_OPTIONS_SCALES_LABEL" 
+                       description="" 
+                       layout="joomla.form.field.subform.default" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="displayconfig" type="radio" label="MOD_NX_CHARTS_DISPLAY_SETUP_LBL" default="0" description="MOD_NX_CHARTS_DISPLAY_SETUP_DESC" class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <!--
+    <updateservers>
+	    <server type="extension" name="MOD_NX_VBLIGHT" priority="1">http://update.nx-designs.ch/updates/filename.xml</server>
+    </updateservers>
+    -->
+</extension>
