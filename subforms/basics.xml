@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="form-validate">
+     <field name="displaytitle" type="radio" default="1" label="MOD_NX_CHARTS_DISPLAYTITLE_LABEL" description="MOD_NX_CHARTS_DISPLAYTITLE_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="charttitle" showon="displaytitle:1" class="" type="text" label="MOD_NX_CHARTS_TITLE_LBL" description="MOD_NX_CHARTS_TITLE_DESC" />
+    <field name="headertag" type="headertag" label="MOD_NX_CHARTS_TITLE_TAG_LBL" description="MOD_NX_CHARTS_TITLE_TAG_DESC" default="h4"/>
+    <field name="charttype" type="list" default="bar" label="MOD_NX_CHARTS_TYPE_LBL" description="MOD_NX_CHARTS_TYPE_DESC">
+        <option value="line">MOD_NX_CHARTS_TYPE_LINE</option>
+        <option value="bar">MOD_NX_CHARTS_TYPE_BAR</option>     
+        <option value="pie">MOD_NX_CHARTS_TYPE_PIE</option>
+        <option value="doughnut">MOD_NX_CHARTS_TYPE_DOUGHNUT</option>
+        <option value="polarArea">MOD_NX_CHARTS_TYPE_POLAR</option>
+    </field>
+    <field name="layoutselector" type="list" default="0" label="MOD_NX_LAYOUTSEL_LBL" description="MOD_NX_LAYOUTSEL_DESC">
+        <option value="0">MOD_NX_LAYOUTSEL_R</option>
+        <option value="1">MOD_NX_LAYOUTSEL_S</option>           
+    </field>
+    <field name="containerwidth" showon="layoutselector:1" label="MOD_NX_CHARTS_CWIDTH_LBL" description="MOD_NX_CHARTS_CWIDTH_DESC"  type="text" default="400" filter="integer" class="required validate-numeric" />
+
+   <field name="containerheight" label="MOD_NX_CHARTS_CHEIGHT_LBL" description="MOD_NX_CHARTS_CHEIGHT_DESC" type="text" default="400" filter="integer" class="required validate-numeric" />
+
+    <field name="chartalign" label="MOD_NX_HALIGN_LBL" description="MOD_NX_HALIGN_DESC" type="list" default="1">
+        <option value="0">MOD_NX_HALIGN_L</option>
+        <option value="1">MOD_NX_HALIGN_C</option>
+        <option value="2">MOD_NX_HALIGN_R</option>
+    </field>
+     <field name="animatescale" showon="charttype:pie[OR]charttype:doughnut" type="radio" default="1" label="MOD_NX_ANISCALE_LBL" description="MOD_NX_ANISCALE_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>           
+    </field>
+    <field name="aniduration" type="text" label="MOD_NX_CHARTS_ANIDUR_LBL" description="MOD_NX_CHARTS_ANIDUR_DESC" filter="integer" class="required validate-numeric" default="1000" />
+    <field name="beginatzero" showon="charttype:line[OR]charttype:bar[OR]charttype:polarArea" type="radio" default="1" label="MOD_NX_CHARTS_BAZ_LABEL" description="MOD_NX_CHARTS_BAZ_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+</form>

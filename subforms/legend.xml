@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="form-validate">
+    <field name="displaylegend" type="radio" default="1" label="MOD_NX_CHARTS_DISPLAYLEGEND_LABEL" description="MOD_NX_CHARTS_DISPLAYLEGEND_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="legendposition" showon="displaylegend:1" type="radio" default="left" label="MOD_NX_CHARTS_LEGPOS_LABEL" description="MOD_NX_CHARTS_LEGPOS_DESC" class="btn-group">
+        <option value="top">MOD_NX_CHARTS_LEGPOS_VAL_T</option>
+        <option value="left">MOD_NX_CHARTS_LEGPOS_VAL_L</option>     
+        <option value="right">MOD_NX_CHARTS_LEGPOS_VAL_R</option>
+        <option value="bottom">MOD_NX_CHARTS_LEGPOS_VAL_B</option>
+    </field>
+    <field name="legenditemboxwidth" showon="displaylegend:1" type="text" default="40" label="MOD_NX_CHARTS_BWIDTH_LABEL" description="MOD_NX_CHARTS_BWIDTH_DESC" filter="integer" class="required validate-numeric" />
+    
+    <field name="legenditemfontsize" showon="displaylegend:1" type="text" default="14" label="MOD_NX_CHARTS_LEGFS_LABEL" description="MOD_NX_CHARTS_LEGFS_DESC" filter="integer" class="required validate-numeric" />
+    
+     <field name="legendfontstyle" showon="displaylegend:1" type="list" default="normal" label="MOD_NX_CHARTS_LEGFST_LABEL" description="MOD_NX_CHARTS_LEGFST_DESC">
+        <option value="normal">MOD_NX_CHARTS_FS_NOR</option> 
+        <option value="bold">MOD_NX_CHARTS_FS_BOL</option>
+         <option value="italic">MOD_NX_CHARTS_FS_ITA</option>  
+         <option value="oblique">MOD_NX_CHARTS_FS_OBL</option>  
+    </field>
+    <field name="legendfontcolor" showon="displaylegend:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_LEGCOL_LABEL" description="MOD_NX_CHARTS_LEGCOL_DESC" />
+</form>

@@ -1,0 +1,26 @@
+/*
+
+    Stylesheet for a proper visualisation
+
+*/
+
+.nx-videobox-container {
+    width:          100%;
+    min-height:     50px;
+    height:         auto;
+    margin:         0;
+    padding:        0;
+    background:     none;
+}
+
+.nx-debug h3 {
+    margin: 20px 0 0 0 !important;
+}
+
+.nx-colorbox{
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 3px;
+}
