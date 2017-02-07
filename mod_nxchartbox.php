@@ -32,7 +32,7 @@ $containerw = $basicsettings->containerwidth;
 $chartalign = $basicsettings->chartalign;
 $animatescale = $basicsettings->animatescale;       //
 $aniduration = $basicsettings->aniduration;         //
-$beginatzero = modnxcharts::truefalse( $basicsettings->beginatzero ); //
+$beginatzero = modnxchartBox::truefalse( $basicsettings->beginatzero ); //
 
 // Configuration legend.xml
 $legend = $params->get( 'legendsettings' );
