@@ -79,5 +79,5 @@ $chartdata = modnxchartBox::getData( $values );
 //$containersetup = modnxcharts::createContainer( $displaymode, $containerh , $containerw );
 //$chartalignment = modnxcharts::setAlignment($chartalign);
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
-require( JModuleHelper::getLayoutPath( 'mod_nxcharts' ) );
+require( JModuleHelper::getLayoutPath( 'mod_nxchartbox' ) );
 ?>
