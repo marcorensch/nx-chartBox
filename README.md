@@ -4,7 +4,8 @@
 With nx-chartBox you are able to publish charts on your joomla Website. nx-chartBox uses the [charts.js](http://www.chartjs.org) Framework to create Bar, Doughnut, Pie, Line, Area or PolarArea charts.
 ## Information
 ```
-nx-chartBox with all its features is actually free to download for joomla 3.x users. There will also be a free version in the future but with limited features. 
+nx-chartBox with all its features is actually free to download for joomla 3.x users.
+There will also be a free version in the future but with limited features. 
 ```
 ```
 Please keep in mind - this is a new Project and its actually an early Beta.
