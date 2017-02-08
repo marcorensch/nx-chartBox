@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form class="form-validate">
-    <field name="name" class="required" type="text" label="Der Name" />
-    <field name="description" type="textarea" label="Example Textarea" cols="40" rows="8" />
-    <field name="value" class="required validate-numeric" type="text" default="8" label="Der Wert" />
-    <field name="color" format="rgba" type="color" default="rgba(15,50,126, 0.5)" label="Color" description="Die Farbe" />
-    <field name="bordercolor" format="rgba" type="color" default="rgba(15,50,126, 0.8)" label="Color" description="Die Farbe" />
+    <field type="text" name="name" class="required" label="MOD_NX_CHARTS_DATA_NAME_LBL" description="MOD_NX_CHARTS_DATA_NAME_DSC" />
+    <field type="textarea" name="description" label="MOD_NX_CHARTS_DATA_TEXT_LBL" description="MOD_NX_CHARTS_DATA_TEXT_DSC" cols="40" rows="4" />
+    <field type="text" name="value" class="required validate-numeric" default="8" label="MOD_NX_CHARTS_DATA_VALUE_LBL" description="MOD_NX_CHARTS_DATA_VALUE_DSC" />
+    <field type="color" name="color" format="rgba" keywords="transparent,initial,inherit" default="rgba(15,50,126, 0.5)" label="MOD_NX_CHARTS_DATA_ITEMCOLOR_LBL" description="MOD_NX_CHARTS_DATA_ITEMCOLOR_DSC" />
+    <field type="color" name="bordercolor" format="rgba" keywords="transparent,initial,inherit" default="rgba(15,50,126, 0.8)" label="MOD_NX_CHARTS_DATA_ITEMBORDERCOLOR_LBL" description="MOD_NX_CHARTS_DATA_ITEMBORDERCOLOR_DSC" />
 </form>
