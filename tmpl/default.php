@@ -1,7 +1,7 @@
 <?php
 /**
- * Printout File for nx-fields
- * @package     nx-fields
+ * Printout File for nx-chartBox
+ * @package     nx-chartBox
  *
  * @copyright   Copyright (C) 2009 - 2016 nx-designs.
  * @license     GNU General Public License version 2 or later
@@ -25,6 +25,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
         array_bcolors_<?php echo $rndm; ?>.push("<?php echo $item->bordercolor; ?>");
     <?php endforeach; ?>
     console.log(array_names_<?php echo $rndm; ?>);
+    console.log(array_colors_<?php echo $rndm; ?>);
 
 </script>
 
@@ -37,7 +38,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
             data: {
                 labels: array_names_<?php echo $rndm; ?>,
                 datasets: [{
-                    label: '# of Votes',
+                    //label: array_names_<?php echo $rndm; ?>,
                     data: array_values_<?php echo $rndm; ?>,
                     backgroundColor: array_colors_<?php echo $rndm; ?>,
                     borderColor: array_bcolors_<?php echo $rndm; ?>,
@@ -50,16 +51,16 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                     animateScale:<?php echo $animatescale ?>,
                     duration:<?php echo $aniduration ?>
                 },
-                responsive:false,                           // true or false if false width setting will be taken
+                responsive:false,                                                   // true or false if false width setting will be taken
                 scales: {
                     xAxes:[{
                         gridLines: {
-                            display:<?php echo $displaygridlines; ?>,
-                            color: "<?php echo $gridlinescolor; ?>",
-                            lineWidth:<?php echo $gridlineswidth; ?>,
-                            <?php if($displayzerolines == 1){
-                                echo 'zeroLineWidth:'.$zerolinewidth.',';
-                                echo 'zeroLineColor:"'.$zerolinecolor.'",';
+                            display:<?php echo $y_displaygridlines; ?>,
+                            color: "<?php echo $y_gridlinescolor; ?>",
+                            lineWidth:<?php echo $y_gridlineswidth; ?>,
+                            <?php if($y_displayzeroline == 1){
+                                echo 'zeroLineWidth:'.$y_zerolinewidth.',';
+                                echo 'zeroLineColor:"'.$y_zerolinecolor.'",';
                                 };
                             ?>
                             drawBorder:<?php echo $drawborder ?>
@@ -67,25 +68,27 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                         },
                         ticks: {
                             display: <?php echo $displayticks; ?>,                  // Hide Axis Title
+                            fontColor:"<?php echo $tickcolor; ?>",                  // Color of the labels
                             min:10,
-                            max:500,
+                            max:500
                         }
                     }],
                     yAxes: [{
                         gridLines: {
-                            display:<?php echo $displaygridlines; ?>,
-                            color: "<?php echo $gridlinescolor; ?>",
-                            lineWidth:<?php echo $gridlineswidth; ?>,
-                            <?php if($displayzerolines == 1){
-                                echo 'zeroLineWidth:'.$zerolinewidth.',';
-                                echo 'zeroLineColor:"'.$zerolinecolor.'",';
+                            display:<?php echo $x_displaygridlines; ?>,
+                            color: "<?php echo $x_gridlinescolor; ?>",
+                            lineWidth:<?php echo $x_gridlineswidth; ?>,
+                            <?php if($x_displayzeroline == 1){
+                                echo 'zeroLineWidth:'.$x_zerolinewidth.',';
+                                echo 'zeroLineColor:"'.$x_zerolinecolor.'",';
                                 };
                             ?>
                             drawBorder:<?php echo $drawborder ?>
                         },
                         ticks: {
                             beginAtZero:<?php echo $beginatzero; ?>,
-                            display: <?php echo $displayticks; ?>                  // Hide Axis Title
+                            display: <?php echo $displayticks; ?>,                  // Hide Axis Title
+                            fontColor:"<?php echo $tickcolor; ?>"                   // Color of the labels
                         }
                     }]
                 }

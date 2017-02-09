@@ -5,18 +5,39 @@
         <option value="0">JNO</option>
         <option value="1">JYES</option>
     </field>
-    <field name="displaygridlines" type="radio" default="1" label="MOD_NX_CHARTS_GRIDLINES_LABEL" description="MOD_NX_CHARTS_GRIDLINES_DESC" class="btn-group btn-group-yesno">
+    
+    <!-- Gridlines X Axis -->
+    <field name="displaygridlines_x" type="radio" default="1" label="MOD_NX_CHARTS_GRIDLINES_X_LABEL" description="MOD_NX_CHARTS_GRIDLINES_X_DESC" class="btn-group btn-group-yesno">
         <option value="0">JNO</option>
         <option value="1">JYES</option>
     </field>
-    <field name="girdlineswidth" showon="displaygridlines:1" type="text" label="MOD_NX_CHARTS_GLINEW_LABEL" description="MOD_NX_CHARTS_GLINEW_DESC" filter="integer" class="required validate-numeric" default="1" />
-    <field name="gridlinescolor" showon="displaygridlines:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_GLINEC_LABEL" description="MOD_NX_CHARTS_GLINEC_DESC" />
-    <field name="displayzerolines" type="radio" default="0" label="MOD_NX_CHARTS_SHOWZEROLINES_LABEL" description="MOD_NX_CHARTS_SHOWZEROLINES_DESC" class="btn-group btn-group-yesno">
+    <field name="gridlineswidth_x" showon="displaygridlines_x:1" type="text" label="MOD_NX_CHARTS_GLINEW_X_LABEL" description="MOD_NX_CHARTS_GLINEW_X_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="gridlinescolor_x" showon="displaygridlines_x:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_GLINEC_X_LABEL" description="MOD_NX_CHARTS_GLINEC_X_DESC" />
+    
+    <!-- Gridlines Y Axis -->
+    <field name="displaygridlines_y" type="radio" default="1" label="MOD_NX_CHARTS_GRIDLINES_Y_LABEL" description="MOD_NX_CHARTS_GRIDLINES_Y_DESC" class="btn-group btn-group-yesno">
         <option value="0">JNO</option>
         <option value="1">JYES</option>
     </field>
-    <field name="zerolineswidth" showon="displayzerolines:1" type="text" label="MOD_NX_CHARTS_ZLINEW_LABEL" description="MOD_NX_CHARTS_ZLINEW_DESC" filter="integer" class="required validate-numeric" default="1" />
-    <field name="zerolinecolor" showon="displayzerolines:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_ZLINEC_LABEL" description="MOD_NX_CHARTS_ZLINEC_DESC" />
+    <field name="gridlineswidth_y" showon="displaygridlines_y:1" type="text" label="MOD_NX_CHARTS_GLINEW_Y_LABEL" description="MOD_NX_CHARTS_GLINEW_Y_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="gridlinescolor_y" showon="displaygridlines_y:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_GLINEC_Y_LABEL" description="MOD_NX_CHARTS_GLINEC_Y_DESC" />
+    
+    <!-- Zeroline X Axis -->
+    <field name="displayzeroline_x" type="radio" default="0" label="MOD_NX_CHARTS_SHOWZEROLINE_X_LABEL" description="MOD_NX_CHARTS_SHOWZEROLINE_X_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="zerolinewidth_x" showon="displayzeroline_x:1" type="text" label="MOD_NX_CHARTS_ZLINEW_X_LABEL" description="MOD_NX_CHARTS_ZLINEW_X_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="zerolinecolor_x" showon="displayzeroline_x:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_ZLINEC_X_LABEL" description="MOD_NX_CHARTS_ZLINEC_X_DESC" />
+    
+    <!-- Zeroline Y Axis -->
+    <field name="displayzeroline_y" type="radio" default="0" label="MOD_NX_CHARTS_SHOWZEROLINE_Y_LABEL" description="MOD_NX_CHARTS_SHOWZEROLINE_Y_DESC" class="btn-group btn-group-yesno">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="zerolinewidth_y" showon="displayzeroline_y:1" type="text" label="MOD_NX_CHARTS_ZLINEW_Y_LABEL" description="MOD_NX_CHARTS_ZLINEW_Y_DESC" filter="integer" class="required validate-numeric" default="1" />
+    <field name="zerolinecolor_y" showon="displayzeroline_y:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_ZLINEC_Y_LABEL" description="MOD_NX_CHARTS_ZLINEC_Y_DESC" />
+    
     
     <field type="spacer" name="endgridLines" hr="true" />
     

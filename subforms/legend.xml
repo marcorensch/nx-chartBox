@@ -17,8 +17,8 @@
      <field name="legendfontstyle" showon="displaylegend:1" type="list" default="normal" label="MOD_NX_CHARTS_LEGFST_LABEL" description="MOD_NX_CHARTS_LEGFST_DESC">
         <option value="normal">MOD_NX_CHARTS_FS_NOR</option> 
         <option value="bold">MOD_NX_CHARTS_FS_BOL</option>
-         <option value="italic">MOD_NX_CHARTS_FS_ITA</option>  
-         <option value="oblique">MOD_NX_CHARTS_FS_OBL</option>  
+        <option value="italic">MOD_NX_CHARTS_FS_ITA</option>  
+        <option value="oblique">MOD_NX_CHARTS_FS_OBL</option>  
     </field>
     <field name="legendfontcolor" showon="displaylegend:1" format="rgba" type="color" default="rgba(50,50,50, 0.8)" label="MOD_NX_CHARTS_LEGCOL_LABEL" description="MOD_NX_CHARTS_LEGCOL_DESC" />
 </form>
