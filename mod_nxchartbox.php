@@ -51,12 +51,18 @@ $labels = $params->get( 'labelssettings' );
 // Configuration scales.xml
 $scalessetings = $params->get( 'scalessettings' );
 $drawborder = modnxchartBox::truefalse( $scalessetings->drawborder );
-$displaygridlines = modnxchartBox::truefalse( $scalessetings->displaygridlines ); //
-$gridlineswidth = $scalessetings->girdlineswidth;
-$gridlinescolor = $scalessetings->gridlinescolor;                           //
-$displayzerolines = $scalessetings->displayzerolines;                         //
-$zerolinewidth = $scalessetings->zerolineswidth;                            //
-$zerolinecolor = $scalessetings->zerolinecolor;                             //
+$x_displaygridlines = modnxchartBox::truefalse( $scalessetings->displaygridlines_x );   //
+$y_displaygridlines = modnxchartBox::truefalse( $scalessetings->displaygridlines_y );   //
+$x_gridlineswidth = $scalessetings->gridlineswidth_x;
+$y_gridlineswidth = $scalessetings->gridlineswidth_y;
+$x_gridlinescolor = $scalessetings->gridlinescolor_x;
+$y_gridlinescolor = $scalessetings->gridlinescolor_y;                   //
+$x_displayzeroline = $scalessetings->displayzeroline_x;
+$y_displayzeroline = $scalessetings->displayzeroline_y;                 //
+$x_zerolinewidth = $scalessetings->zerolinewidth_x;
+$y_zerolinewidth = $scalessetings->zerolinewidth_y;                    //
+$x_zerolinecolor = $scalessetings->zerolinecolor_x;
+$y_zerolinecolor = $scalessetings->zerolinecolor_y;                     //
 
 $displayticks = modnxchartBox::truefalse( $scalessetings->displayticks );     //
 $autoSkip = modnxchartBox::truefalse( $scalessetings->autoSkip );
